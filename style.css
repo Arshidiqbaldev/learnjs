@@ -1,147 +1,36 @@
-* {
-  box-sizing: border-box;
+*{
   padding: 0;
   margin: 0;
-  font-family: monospace;
-  
-  color: rgb(251, 251, 251);
+  box-sizing: border-box;
+
 }
 
-body {
-  background: #000000;
+
+
+
+body{
+  background: #0c321b;
+
 }
 
-.parent {
+
+.parent{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  padding: 4rem;
-  flex-wrap: wrap;
-  gap: 30px;
+  padding: 10px;
+  min-height: 100vh;
+
 }
 
-.child , .child2{
+.child{
+  background: #0c2011;
+  color: aliceblue;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction:column;
+  justify-content: end;
+  align-items: start;
+  gap:20px;
+  padding: 2rem;
   flex-grow: 1;
-  background: #141313;
-  color: #ffffff;
-  border-radius: 50px;
-  corner-shape: squircle;
-  border: 1px solid #272727;
-}
-
-
-@supports (corner-shape:squircle){
-  .icon{
-    corner-shape: squircle;
-  }
-}
-
-/* @supports (animation-timeline: view()){
-.child {
-        animation: fadeUp1 ease-in-out 2s;
-        animation-timeline: view();
-        animation-range: entry 0% cover 50%;
-        animation-fill-mode: both;
-
-
-} }
-
-@keyframes fadeUp1{
-    from { opacity: 1; transform:  scale(0); }
-    to { opacity: 1; transform:  scale(1); } }
-
-
-
-@supports (animation-timeline: view()){
-
-.child2 {
-  animation: fadeIn2 ease-in-out 2s;
-  animation-timeline: view();
-  animation-range: entry 100% cover 150%;
-  animation-fill-mode: both;
-}
-
-
-}
-
-
-
-@keyframes fadeIn2 {
-
-from{
-   opacity: 1;
-   transform: scale(1);
-}
-
-to {
-  opacity: 1;
-  transform: scale(0);
-}
-} */
-
-
-
-@supports (animation-timeline: view()){
-
-.child2 {
-
-  animation: fadeIn ease-in-out 2s;
-  animation-timeline: view();
-  animation-range : entry 100% cover 150%;
-  animation-fill-mode: both;
-
-
-
-}
-
-}
-
-@keyframes fadeIn {
-
-from{
-  opacity: 1;
-  transform: scale(1);
-}
-
-
-to {
-  opacity: 1;
-  transform: scale(0);
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-.desc {
-  font-size: 42px;
-}
-
-#b1,#b2 ,#b3{
-  display: block;
-  padding: 20px 40px ;
-  color: black;
-  background: red;
-  cursor: pointer;
-}
-
-
-.red {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  padding: 30px 40px ;
-  background: #298200;
 }
