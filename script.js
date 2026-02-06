@@ -58,12 +58,14 @@ b1.onclick = function () {
 };
 
 b2.onclick = function () {
-  p.style.cssText = "color:green; font-size:22px;";
+  p.style.cssText = "color:yellow ; font-size:30px;";
 };
 
 b3.onclick = function () {
   p.classList.toggle("red");
 };
+
+
 
 }
 
