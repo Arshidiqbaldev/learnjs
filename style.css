@@ -6,6 +6,13 @@
   box-sizing: border-box;
   corner-shape: squircle;
   font-family: "Google Sans Flex", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+::selection {
+  background: #f60900;
+  color: #000000;
 }
 
 .header-parent,
@@ -114,8 +121,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  
-  
 }
 
 .about-child {
@@ -127,8 +132,6 @@
   padding: 12px;
   gap: 1.5rem;
   height: 100%;
-
-
 }
 
 @media (min-width: 678px) {
